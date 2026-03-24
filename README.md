@@ -3340,6 +3340,7 @@ docker build -t pentagi:dev .
 This project is made possible thanks to the following research and developments:
 - [Emerging Architectures for LLM Applications](https://lilianweng.github.io/posts/2023-06-23-agent)
 - [A Survey of Autonomous LLM Agents](https://arxiv.org/abs/2403.08299)
+- [Codel](https://github.com/semanser/codel) by Andriy Semenets - initial architectural inspiration for agent-based automation
 
 ## License
 
@@ -3347,6 +3348,25 @@ This project is made possible thanks to the following research and developments:
 
 **PentAGI Core**: Licensed under [MIT License](LICENSE)  
 Copyright (c) 2025 PentAGI Development Team
+
+### Initial Code Base and Complete Rewrite
+
+The initial commits of this project used architectural concepts from [Codel](https://github.com/semanser/codel) by Andriy Semenets ([semanser](https://github.com/semanser)), which is licensed under the **AGPL-3.0 License**.
+
+**Original Project**: https://github.com/semanser/codel  
+**Original License**: [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.en.html)  
+**Copyright**: (c) 2024 Andriy Semenets ([semanser](https://github.com/semanser))
+
+#### Complete Replacement
+
+**PentAGI represents a complete rewrite of the original codebase:**
+
+- **Frontend**: Developed entirely [from scratch](https://github.com/vxcontrol/pentagi/commit/24a9b5f1d210d4a0dfb0a02d8555fd6f68847120) using React + TypeScript + GraphQL, with a completely new UI/UX design and architecture
+- **Backend**: All business logic has been completely rewritten and redesigned for autonomous penetration testing workflows, multi-agent orchestration, and security tool integration
+- **Architecture**: Completely new data models, API design, authentication system, and agent framework
+- **Functionality**: Specialized for professional penetration testing use cases with unique features not present in the original project
+
+Due to this complete replacement and rewrite of the original code, **PentAGI is licensed under the MIT License**. While we acknowledge the architectural inspiration from Codel's AGPL-3.0 licensed codebase in the initial commits, the current implementation contains no substantial portions of the original code.
 
 ### VXControl Cloud SDK Integration
 
